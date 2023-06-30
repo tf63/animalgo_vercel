@@ -1,4 +1,4 @@
-import axios from 'axios'
+// import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { CategoryDetail, Individual, Status } from '../types/types'
@@ -9,7 +9,6 @@ import { CATEGORY_DETAIL_RESPONSE } from '../data/CategoryDetail'
 
 const Detail = () => {
     const { id } = useParams()
-    // const id = 1
 
     const [categoryDetail, setCategoryDetail] = useState<CategoryDetail>({
         id: 0,
@@ -118,7 +117,7 @@ const Detail = () => {
                         <div className="card square" key={index}>
                             <div className="container-center">
                                 <img
-                                    src={`${API_ENDPOINTS.BASE}${individual.image}`}
+                                    src={individual.image}
                                     style={{ width: '180px' }}
                                     alt={individual.score.toString()}
                                 />

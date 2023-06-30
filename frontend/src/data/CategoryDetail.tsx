@@ -2,7 +2,6 @@ export const CATEGORY_DETAIL_RESPONSE = [
     {
         category: {
             id: 1,
-
             label: 'brown bear',
             label_ja: 'ヒグマ',
             ecology:
@@ -20,38 +19,50 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 1,
                 category: 1,
-                image: './media//brown_bear_gmaJ8OK.png',
-                score: 99
+                image: '/images/brown_bear_gmaJ8OK.png',
+                score: 99,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             },
             {
                 id: 2,
                 category: 1,
-                image: './media//brown_bear_sy7JS9A.png',
-                score: 99
+                image: '/images/brown_bear_sy7JS9A.png',
+                score: 99,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             },
             {
                 id: 3,
                 category: 1,
-                image: './media//brown_bear_TOYsFZl.png',
-                score: 99
+                image: '/images/brown_bear_TOYsFZl.png',
+                score: 99,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             },
             {
                 id: 4,
                 category: 1,
-                image: './media//brown_bear_WClqAmu.png',
-                score: 99
+                image: '/images/brown_bear_WClqAmu.png',
+                score: 99,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             },
             {
                 id: 5,
                 category: 1,
-                image: './media//brown_bear_wlrzLvN.png',
-                score: 90
+                image: '/images/brown_bear_wlrzLvN.png',
+                score: 90,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             },
             {
                 id: 6,
                 category: 1,
-                image: './media//brown_bear.png',
-                score: 98
+                image: '/images/brown_bear.png',
+                score: 98,
+                label: 'brown bear',
+                label_ja: 'ヒグマ'
             }
         ]
     },
@@ -75,32 +86,42 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 7,
                 category: 2,
-                image: './media//Arabian_camel.png',
-                score: 99
+                image: '/images/Arabian_camel.png',
+                score: 99,
+                label: 'Arabian camel',
+                label_ja: 'アラビアラクダ'
             },
             {
                 id: 8,
                 category: 2,
-                image: './media//Arabian_camel_p4apRBh.png',
-                score: 99
+                image: '/images/Arabian_camel_p4apRBh.png',
+                score: 99,
+                label: 'Arabian camel',
+                label_ja: 'アラビアラクダ'
             },
             {
                 id: 9,
                 category: 2,
-                image: './media//Arabian_camel_rwp9CoI.png',
-                score: 99
+                image: '/images/Arabian_camel_rwp9CoI.png',
+                score: 99,
+                label: 'Arabian camel',
+                label_ja: 'アラビアラクダ'
             },
             {
                 id: 10,
                 category: 2,
-                image: './media//Arabian_camel_6gZ0d8u.png',
-                score: 99
+                image: '/images/Arabian_camel_6gZ0d8u.png',
+                score: 99,
+                label: 'Arabian camel',
+                label_ja: 'アラビアラクダ'
             },
             {
                 id: 11,
                 category: 2,
-                image: './media//Arabian_camel_mecjipq.png',
-                score: 99
+                image: '/images/Arabian_camel_mecjipq.png',
+                score: 99,
+                label: 'Arabian camel',
+                label_ja: 'アラビアラクダ'
             }
         ]
     },
@@ -124,8 +145,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 12,
                 category: 3,
-                image: './media//ostrich.png',
-                score: 99
+                image: '/images/ostrich.png',
+                score: 99,
+                label: 'ostrich',
+                label_ja: 'ダチョウ'
             }
         ]
     },
@@ -149,14 +172,18 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 13,
                 category: 4,
-                image: './media//dingo.png',
-                score: 99
+                image: '/images/dingo.png',
+                score: 99,
+                label: 'dingo',
+                label_ja: 'ディンゴ'
             },
             {
                 id: 14,
                 category: 4,
-                image: './media//dingo_EInmKim.png',
-                score: 99
+                image: '/images/dingo_EInmKim.png',
+                score: 99,
+                label: 'dingo',
+                label_ja: 'ディンゴ'
             }
         ]
     },
@@ -180,26 +207,34 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 15,
                 category: 5,
-                image: './media//African_elephant_3qaRWu8.png',
-                score: 75
+                image: '/images/African_elephant_3qaRWu8.png',
+                score: 75,
+                label: 'African elephant',
+                label_ja: 'アフリカゾウ'
             },
             {
                 id: 16,
                 category: 5,
-                image: './media//African_elephant.png',
-                score: 55
+                image: '/images/African_elephant.png',
+                score: 55,
+                label: 'African elephant',
+                label_ja: 'アフリカゾウ'
             },
             {
                 id: 17,
                 category: 5,
-                image: './media//African_elephant_d9z0cld.png',
-                score: 52
+                image: '/images/African_elephant_d9z0cld.png',
+                score: 52,
+                label: 'African elephant',
+                label_ja: 'アフリカゾウ'
             },
             {
                 id: 18,
                 category: 5,
-                image: './media//African_elephant_vtUu5gL.png',
-                score: 45
+                image: '/images/African_elephant_vtUu5gL.png',
+                score: 45,
+                label: 'African elephant',
+                label_ja: 'アフリカゾウ'
             }
         ]
     },
@@ -223,8 +258,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 6,
                 category: 6,
-                image: './media//kit_fox.png',
-                score: 69
+                image: '/images/kit_fox.png',
+                score: 69,
+                label: 'kit fox',
+                label_ja: 'キットキツネ'
             }
         ]
     },
@@ -248,8 +285,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 20,
                 category: 7,
-                image: './media//bee_eater.png',
-                score: 98
+                image: '/images/bee_eater.png',
+                score: 98,
+                label: 'bee eater',
+                label_ja: 'スイートピー'
             }
         ]
     },
@@ -273,8 +312,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 21,
                 category: 8,
-                image: './media//Samoyed.png',
-                score: 57
+                image: '/images/Samoyed.png',
+                score: 57,
+                label: 'Samoyed',
+                label_ja: 'サモエド'
             }
         ]
     },
@@ -298,20 +339,26 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 22,
                 category: 9,
-                image: './media//ox_729zVav.png',
-                score: 99
+                image: '/images/ox_729zVav.png',
+                score: 99,
+                label: 'ox',
+                label_ja: 'ウシ'
             },
             {
                 id: 23,
                 category: 9,
-                image: './media//ox.png',
-                score: 83
+                image: '/images/ox.png',
+                score: 83,
+                label: 'ox',
+                label_ja: 'ウシ'
             },
             {
                 id: 24,
                 category: 9,
-                image: './media//ox_aj47IrQ.png',
-                score: 69
+                image: '/images/ox_aj47IrQ.png',
+                score: 69,
+                label: 'ox',
+                label_ja: 'ウシ'
             }
         ]
     },
@@ -335,8 +382,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 25,
                 category: 10,
-                image: './media//giant_panda.png',
-                score: 99
+                image: '/images/giant_panda.png',
+                score: 99,
+                label: 'giant panda',
+                label_ja: 'ジャイアントパンダ'
             }
         ]
     },
@@ -360,8 +409,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 26,
                 category: 11,
-                image: './media//albatross.png',
-                score: 50
+                image: '/images/albatross.png',
+                score: 50,
+                label: 'albatross',
+                label_ja: 'アルバトロス'
             }
         ]
     },
@@ -385,8 +436,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 27,
                 category: 12,
-                image: './media//chickadee.png',
-                score: 35
+                image: '/images/chickadee.png',
+                score: 35,
+                label: 'chickadee',
+                label_ja: 'ハシブトガラス'
             }
         ]
     },
@@ -410,8 +463,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 28,
                 category: 13,
-                image: './media//tiger.png',
-                score: 92
+                image: '/images/tiger.png',
+                score: 92,
+                label: 'tiger',
+                label_ja: 'トラ'
             }
         ]
     },
@@ -435,8 +490,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 29,
                 category: 14,
-                image: './media//wallaby.png',
-                score: 81
+                image: '/images/wallaby.png',
+                score: 81,
+                label: 'wallaby',
+                label_ja: 'ワラビー'
             }
         ]
     },
@@ -460,14 +517,18 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 30,
                 category: 15,
-                image: './media//ice_bear.png',
-                score: 99
+                image: '/images/ice_bear.png',
+                score: 99,
+                label: 'ice bear',
+                label_ja: 'シロクマ'
             },
             {
                 id: 31,
                 category: 15,
-                image: './media//ice_bear_Wfbcewc.png',
-                score: 99
+                image: '/images/ice_bear_Wfbcewc.png',
+                score: 99,
+                label: 'ice bear',
+                label_ja: 'シロクマ'
             }
         ]
     },
@@ -491,26 +552,34 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 32,
                 category: 16,
-                image: './media//zebra.png',
-                score: 99
+                image: '/images/zebra.png',
+                score: 99,
+                label: 'zebra',
+                label_ja: 'シマウマ'
             },
             {
                 id: 33,
                 category: 16,
-                image: './media//zebra_Kxk5xxG.png',
-                score: 99
+                image: '/images/zebra_Kxk5xxG.png',
+                score: 99,
+                label: 'zebra',
+                label_ja: 'シマウマ'
             },
             {
                 id: 34,
                 category: 16,
-                image: './media//zebra_tsUj3U9.png',
-                score: 99
+                image: '/images/zebra_tsUj3U9.png',
+                score: 99,
+                label: 'zebra',
+                label_ja: 'シマウマ'
             },
             {
                 id: 35,
                 category: 16,
-                image: './media//zebra_P9XKW3J.png',
-                score: 99
+                image: '/images/zebra_P9XKW3J.png',
+                score: 99,
+                label: 'zebra',
+                label_ja: 'シマウマ'
             }
         ]
     },
@@ -534,8 +603,10 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 36,
                 category: 17,
-                image: './media//beaver.png',
-                score: 57
+                image: '/images/beaver.png',
+                score: 57,
+                label: 'beaver',
+                label_ja: 'ビーバー'
             }
         ]
     },
@@ -559,8 +630,187 @@ export const CATEGORY_DETAIL_RESPONSE = [
             {
                 id: 37,
                 category: 18,
-                image: './media//otter.png',
-                score: 96
+                image: '/images/otter.png',
+                score: 96,
+                label: 'otter',
+                label_ja: 'カワウソ'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 19,
+            label: 'Pomeranian',
+            label_ja: 'ポメラニアン',
+            hp: 28,
+            attack: 45,
+            defense: 35,
+            speed: 55,
+            magic_attack: 50,
+            magic_defense: 35,
+            type: 'ノーマル',
+            trivia: 'ポメラニアンは体が小さいため、非常に活発で遊ぶことが大好きです。また、鳴き声が大きく、番犬として飼われることもあります。',
+            ecology:
+                'ポメラニアンはドイツ原産の愛玩犬で、世界中で人気があります。室内飼育が主流で、運動不足になりやすいため、適度な運動を与える必要があります。主に肉食で、犬用のドッグフードを食べます。'
+        },
+        individuals: [
+            {
+                id: 38,
+                image: '/media/Pomeranian.png',
+                score: 78,
+                category: 19,
+                label: 'Pomeranian',
+                label_ja: 'ポメラニアン'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 20,
+            label: 'tabby',
+            label_ja: 'タビー猫',
+            hp: 50,
+            attack: 50,
+            defense: 50,
+            speed: 90,
+            magic_attack: 50,
+            magic_defense: 50,
+            type: 'ノーマル',
+            trivia: 'タビー猫の柄の種類は多岐にわたり、独特の模様を持っています。また、猫は寝転がっているところが好きで、目の前にあるものに関係なく、その場で寝てしまうことがあります。',
+            ecology: 'タビー猫は主に人間の家で飼われています。小型哺乳類や鳥類を食べ、夜行性です。'
+        },
+        individuals: [
+            {
+                id: 45,
+                image: '/media/tabby_WOtcFOA.png',
+                score: 44,
+                category: 20,
+                label: 'tabby',
+                label_ja: 'タビー猫'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 21,
+            label: 'hare',
+            label_ja: 'ウサギ',
+            hp: 55,
+            attack: 50,
+            defense: 40,
+            speed: 90,
+            magic_attack: 40,
+            magic_defense: 40,
+            type: 'ノーマル',
+            trivia: 'ウサギは非常によく走り、時速60km/h以上で走ることができます。また、ウサギの瞳孔は横長になっており、よく外敵を察知します。',
+            ecology:
+                'ウサギは世界中に広く分布しており、木の根元や茂みの中に住むことが多いです。主に草食で、小型の草や種子、果実を食べます。'
+        },
+        individuals: [
+            {
+                id: 56,
+                image: '/media/hare_O2TwnhY.png',
+                score: 68,
+                category: 21,
+                label: 'hare',
+                label_ja: 'ウサギ'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 22,
+            label: 'hamster',
+            label_ja: 'ハムスター',
+            hp: 65,
+            attack: 73,
+            defense: 60,
+            speed: 92,
+            magic_attack: 30,
+            magic_defense: 65,
+            type: 'ノーマル',
+            trivia: 'ハムスターは頬袋と呼ばれる袋を持っており、食べ物を貯めることができます。また、ハムスターは大きな車輪の上で遊んだり、トンネルを掘ったりすることが大好きです。',
+            ecology:
+                'ハムスターは主にユーラシア大陸に分布する小動物で、草食性です。主に種子や穀物、果物を摂取して生活しています。また、暗い環境を好み、昼夜逆転の生活をすることがあります。'
+        },
+        individuals: [
+            {
+                id: 41,
+                image: '/media/hamster.png',
+                score: 96,
+                category: 22,
+                label: 'hamster',
+                label_ja: 'ハムスター'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 23,
+            label: 'Pekinese',
+            label_ja: 'ペキニーズ',
+            hp: 60,
+            attack: 45,
+            defense: 60,
+            speed: 45,
+            magic_attack: 90,
+            magic_defense: 110,
+            type: 'フェアリー',
+            trivia: 'ペキニーズは非常に小さな犬種で、寿命は長いです。ペキニーズは中国でその起源を持ち、一度崩壊していた「紫禁城」の存亡に貢献した固有の犬種です。',
+            ecology:
+                'ペキニーズは愛玩犬として世界中に広く分布しています。主にキャットフード、ドックフード、鶏肉を食べます。'
+        },
+        individuals: [
+            {
+                id: 75,
+                image: '/media/Pekinese.png',
+                score: 95,
+                category: 23,
+                label: 'Pekinese',
+                label_ja: 'ペキニーズ'
+            }
+        ]
+    },
+    {
+        category: {
+            id: 24,
+            label: 'king penguin',
+            label_ja: 'キンペンギン',
+            hp: 75,
+            attack: 45,
+            defense: 70,
+            speed: 40,
+            magic_attack: 40,
+            magic_defense: 70,
+            type: 'こおり',
+            trivia: 'キンペンギンの一生の中で、雀斑模様を持ったローワー（喉や胸の部分）を綺麗に洗う事が彼らの醜い習慣の一つです。また、この鳥は赤道からは比較的遠い南極での生活が長く続くため、夏でも冬でも必然的に体表温度を保ち、体内の熱を放散するために常に汗をかいています。',
+            ecology:
+                'キンペンギンは南極固有の固体群落（コロニー）である。主に小型の魚類やプランクトンを食べ、海岸近くの氷の上に生息しています。'
+        },
+        individuals: [
+            {
+                id: 88,
+                image: '/media/king_penguin.png',
+                score: 99,
+                category: 24,
+                label: 'king penguin',
+                label_ja: 'キンペンギン'
+            },
+            {
+                id: 89,
+                image: '/media/king_penguin_Sjuve2i.png',
+                score: 99,
+                category: 24,
+                label: 'king penguin',
+                label_ja: 'キンペンギン'
+            },
+            {
+                id: 90,
+                image: '/media/devpenpen.png',
+                score: 64,
+                category: 24,
+                label: 'king penguin',
+                label_ja: 'キンペンギン'
             }
         ]
     }

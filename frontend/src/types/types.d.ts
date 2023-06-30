@@ -10,6 +10,8 @@ export type Individual = {
     image: string
     score: number
     category: number
+    label: string
+    label_ja: string
 }
 
 export type CategoryDetail = {

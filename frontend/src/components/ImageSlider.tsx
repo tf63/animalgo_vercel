@@ -29,7 +29,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ individuals }) => {
                         <Link to={`detail/${individual.category}`} className="link" key={index}>
                             <div key={index} style={{ paddingTop: '30px' }}>
                                 <div className="container-center">
-                                    <img src={`${API_ENDPOINTS.BASE}${individual.image}`} alt={`${individual.id}`} />
+                                    <img src={individual.image} alt={`${individual.id}`} />
                                 </div>
                                 <div className="container-center padding-bottom">
                                     <p>

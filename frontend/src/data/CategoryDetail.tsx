@@ -656,7 +656,7 @@ export const CATEGORY_DETAIL_RESPONSE = [
         individuals: [
             {
                 id: 38,
-                image: '/media/Pomeranian.png',
+                image: '/images/devdog.png',
                 score: 78,
                 category: 19,
                 label: 'Pomeranian',
@@ -682,7 +682,7 @@ export const CATEGORY_DETAIL_RESPONSE = [
         individuals: [
             {
                 id: 45,
-                image: '/media/tabby_WOtcFOA.png',
+                image: '/images/devtanuki.png',
                 score: 44,
                 category: 20,
                 label: 'tabby',
@@ -709,7 +709,7 @@ export const CATEGORY_DETAIL_RESPONSE = [
         individuals: [
             {
                 id: 56,
-                image: '/media/hare_O2TwnhY.png',
+                image: '/images/devrabbit.png',
                 score: 68,
                 category: 21,
                 label: 'hare',
@@ -736,7 +736,7 @@ export const CATEGORY_DETAIL_RESPONSE = [
         individuals: [
             {
                 id: 41,
-                image: '/media/hamster.png',
+                image: '/images/devhamu.png',
                 score: 96,
                 category: 22,
                 label: 'hamster',
@@ -763,7 +763,7 @@ export const CATEGORY_DETAIL_RESPONSE = [
         individuals: [
             {
                 id: 75,
-                image: '/media/Pekinese.png',
+                image: '/images/devdog_dot.png',
                 score: 95,
                 category: 23,
                 label: 'Pekinese',
@@ -789,24 +789,8 @@ export const CATEGORY_DETAIL_RESPONSE = [
         },
         individuals: [
             {
-                id: 88,
-                image: '/media/king_penguin.png',
-                score: 99,
-                category: 24,
-                label: 'king penguin',
-                label_ja: 'キンペンギン'
-            },
-            {
-                id: 89,
-                image: '/media/king_penguin_Sjuve2i.png',
-                score: 99,
-                category: 24,
-                label: 'king penguin',
-                label_ja: 'キンペンギン'
-            },
-            {
                 id: 90,
-                image: '/media/devpenpen.png',
+                image: '/images/devpenpen.png',
                 score: 64,
                 category: 24,
                 label: 'king penguin',

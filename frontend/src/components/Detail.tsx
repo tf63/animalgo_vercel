@@ -42,7 +42,7 @@ const Detail = () => {
         const fetchData = () => {
             // const response = await axios(`${API_ENDPOINTS.CATEGORY}?id=${id}`)
             // const data: CategoryDetailAPI = await response.data
-            const data: CategoryDetailAPI = CATEGORY_DETAIL_RESPONSE[Number(id)]
+            const data: CategoryDetailAPI = CATEGORY_DETAIL_RESPONSE[Number(id) - 1]
             console.log(data)
             setCategoryDetail(data.category)
             setIndividuals(data.individuals)
@@ -72,7 +72,7 @@ const Detail = () => {
             </div>
             <div className="card column2">
                 <div className="detail_img">
-                    <img src={`${API_ENDPOINTS.BASE}${individuals[0].image}`}></img>
+                    <img src={individuals[0].image}></img>
                 </div>
                 <div className="detail_info1">
                     <p>No.{categoryDetail.id}</p>

@@ -1,6 +1,42 @@
 export const CATEGORY_RESPONSE = {
     top_images: [
         {
+            id: 19,
+            label: 'Pomeranian',
+            label_ja: 'ポメラニアン',
+            image: '/images/devdog.png'
+        },
+        {
+            id: 20,
+            label: 'tabby',
+            label_ja: 'タビー猫',
+            image: '/images/devtanuki.png'
+        },
+        {
+            id: 21,
+            label: 'hare',
+            label_ja: 'ウサギ',
+            image: '/images/devrabbit.png'
+        },
+        {
+            id: 22,
+            label: 'hamster',
+            label_ja: 'ハムスター',
+            image: '/images/devhamu.png'
+        },
+        {
+            id: 23,
+            label: 'Pekinese',
+            label_ja: 'ペキニーズ',
+            image: '/images/devdog_dot.png'
+        },
+        {
+            id: 24,
+            label: 'king penguin',
+            label_ja: 'キンペンギン',
+            image: '/images/devpenpen.png'
+        },
+        {
             id: 1,
             label: 'brown bear',
             label_ja: 'ヒグマ',
@@ -65,42 +101,6 @@ export const CATEGORY_RESPONSE = {
             label: 'kit fox',
             label_ja: 'キットキツネ',
             image: '/images/kit_fox.png'
-        },
-        {
-            id: 19,
-            label: 'Pomeranian',
-            label_ja: 'ポメラニアン',
-            image: '/images/devdog.png'
-        },
-        {
-            id: 20,
-            label: 'tabby',
-            label_ja: 'タビー猫',
-            image: '/images/devtanuki.png'
-        },
-        {
-            id: 21,
-            label: 'hare',
-            label_ja: 'ウサギ',
-            image: '/images/devrabbit.png'
-        },
-        {
-            id: 22,
-            label: 'hamster',
-            label_ja: 'ハムスター',
-            image: '/images/devhamu.png'
-        },
-        {
-            id: 23,
-            label: 'Pekinese',
-            label_ja: 'ペキニーズ',
-            image: '/images/devdog_dot.png'
-        },
-        {
-            id: 24,
-            label: 'king penguin',
-            label_ja: 'キンペンギン',
-            image: '/images/devpenpen.png'
         },
         {
             id: 12,

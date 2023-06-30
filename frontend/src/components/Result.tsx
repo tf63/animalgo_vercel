@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { ImageAPI } from '../interfaces/interfaces'
 import { CategoryDetail, Individual } from '../types/types'
-import { API_ENDPOINTS } from '../api'
 
 const Result = () => {
     const location = useLocation()

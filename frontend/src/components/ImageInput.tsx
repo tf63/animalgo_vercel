@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const ImageUploadForm = () => {
     const fileInputRef = useRef<HTMLInputElement>(null)

@@ -5,6 +5,7 @@ import { ImageAPI, TriviaAPI } from '../interfaces/interfaces'
 import { Trivia } from '../types/types'
 import axios from 'axios'
 import TriviaSlider from './TriviaSlider'
+import { TRIVIA_RESPONSE } from '../data/Trivia'
 
 const Loading = () => {
     const navigate = useNavigate()
@@ -18,10 +19,11 @@ const Loading = () => {
 
     // トリビアの取得
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = () => {
             try {
-                const response = await axios(API_ENDPOINTS.TRIVIA)
-                const data: TriviaAPI = response.data
+                // const response = await axios(API_ENDPOINTS.TRIVIA)
+                // const data: TriviaAPI = response.data
+                const data: TriviaAPI = TRIVIA_RESPONSE
                 console.log(`data: ${data}`)
                 setTriviaList(data.trivia)
             } catch (error) {

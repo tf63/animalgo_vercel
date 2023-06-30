@@ -5,6 +5,7 @@ import { CategoryDetail, Individual, Status } from '../types/types'
 import { CategoryDetailAPI } from '../interfaces/interfaces'
 import { API_ENDPOINTS } from '../api'
 import ProgressBar from './ProgressBar'
+import { CATEGORY_DETAIL_RESPONSE } from '../data/CategoryDetail'
 
 const Detail = () => {
     const { id } = useParams()
@@ -39,9 +40,10 @@ const Detail = () => {
     const [individuals, setIndividuals] = useState<Individual[]>([])
 
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await axios(`${API_ENDPOINTS.CATEGORY}?id=${id}`)
-            const data: CategoryDetailAPI = await response.data
+        const fetchData = () => {
+            // const response = await axios(`${API_ENDPOINTS.CATEGORY}?id=${id}`)
+            // const data: CategoryDetailAPI = await response.data
+            const data: CategoryDetailAPI = CATEGORY_DETAIL_RESPONSE[Number(id)]
             console.log(data)
             setCategoryDetail(data.category)
             setIndividuals(data.individuals)
@@ -77,22 +79,8 @@ const Detail = () => {
                     <p>No.{categoryDetail.id}</p>
                     <h2>{categoryDetail.label_ja}</h2>
                     <p>レベル: {individuals[0].score}</p>
-                    {/* <p>クラス：{categoryDetail.label}</p>
-                    <p>分類：{categoryDetail.label_ja} あにモン</p>
-                    <p>タイプ: {categoryDetail.type}</p> */}
                 </div>
             </div>
-            {/* <div className="card detail_feature">
-                {Object.values(status).map((statusValue, index) => {
-                    return (
-                        <div className="container-status" key={index} style={{ width: '100%' }}>
-                            <p>{statusLabels[index]}</p>
-                            <ProgressBar width={100} value={statusValue} />
-                            <p>{statusValue}</p>
-                        </div>
-                    )
-                })}
-            </div> */}
             <div className="column2">
                 <div className="card detail_info2">
                     <p>分類：{categoryDetail.label_ja} あにモン</p>

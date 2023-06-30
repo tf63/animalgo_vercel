@@ -1,8 +1,8 @@
 export const CATEGORY_DETAIL_RESPONSE = [
     {
-        model: 'api.category',
-        pk: 1,
-        fields: {
+        category: {
+            id: 1,
+
             label: 'brown bear',
             label_ja: 'ヒグマ',
             ecology:
@@ -15,12 +15,49 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 60,
             magic_defense: 70,
             speed: 40
-        }
+        },
+        individuals: [
+            {
+                id: 1,
+                category: 1,
+                image: './media//brown_bear_gmaJ8OK.png',
+                score: 99
+            },
+            {
+                id: 2,
+                category: 1,
+                image: './media//brown_bear_sy7JS9A.png',
+                score: 99
+            },
+            {
+                id: 3,
+                category: 1,
+                image: './media//brown_bear_TOYsFZl.png',
+                score: 99
+            },
+            {
+                id: 4,
+                category: 1,
+                image: './media//brown_bear_WClqAmu.png',
+                score: 99
+            },
+            {
+                id: 5,
+                category: 1,
+                image: './media//brown_bear_wlrzLvN.png',
+                score: 90
+            },
+            {
+                id: 6,
+                category: 1,
+                image: './media//brown_bear.png',
+                score: 98
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 2,
-        fields: {
+        category: {
+            id: 2,
             label: 'Arabian camel',
             label_ja: 'アラビアラクダ',
             ecology:
@@ -33,12 +70,43 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 30,
             magic_defense: 40,
             speed: 55
-        }
+        },
+        individuals: [
+            {
+                id: 7,
+                category: 2,
+                image: './media//Arabian_camel.png',
+                score: 99
+            },
+            {
+                id: 8,
+                category: 2,
+                image: './media//Arabian_camel_p4apRBh.png',
+                score: 99
+            },
+            {
+                id: 9,
+                category: 2,
+                image: './media//Arabian_camel_rwp9CoI.png',
+                score: 99
+            },
+            {
+                id: 10,
+                category: 2,
+                image: './media//Arabian_camel_6gZ0d8u.png',
+                score: 99
+            },
+            {
+                id: 11,
+                category: 2,
+                image: './media//Arabian_camel_mecjipq.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 3,
-        fields: {
+        category: {
+            id: 3,
             label: 'ostrich',
             label_ja: 'ダチョウ',
             ecology:
@@ -51,12 +119,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 45,
             magic_defense: 60,
             speed: 70
-        }
+        },
+        individuals: [
+            {
+                id: 12,
+                category: 3,
+                image: './media//ostrich.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 4,
-        fields: {
+        category: {
+            id: 4,
             label: 'dingo',
             label_ja: 'ディンゴ',
             ecology:
@@ -69,12 +144,25 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 44,
             magic_defense: 48,
             speed: 68
-        }
+        },
+        individuals: [
+            {
+                id: 13,
+                category: 4,
+                image: './media//dingo.png',
+                score: 99
+            },
+            {
+                id: 14,
+                category: 4,
+                image: './media//dingo_EInmKim.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 5,
-        fields: {
+        category: {
+            id: 5,
             label: 'African elephant',
             label_ja: 'アフリカゾウ',
             ecology:
@@ -87,12 +175,37 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 50,
             magic_defense: 60,
             speed: 50
-        }
+        },
+        individuals: [
+            {
+                id: 15,
+                category: 5,
+                image: './media//African_elephant_3qaRWu8.png',
+                score: 75
+            },
+            {
+                id: 16,
+                category: 5,
+                image: './media//African_elephant.png',
+                score: 55
+            },
+            {
+                id: 17,
+                category: 5,
+                image: './media//African_elephant_d9z0cld.png',
+                score: 52
+            },
+            {
+                id: 18,
+                category: 5,
+                image: './media//African_elephant_vtUu5gL.png',
+                score: 45
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 6,
-        fields: {
+        category: {
+            id: 6,
             label: 'kit fox',
             label_ja: 'キットキツネ',
             ecology:
@@ -105,12 +218,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 35,
             magic_defense: 40,
             speed: 65
-        }
+        },
+        individuals: [
+            {
+                id: 6,
+                category: 6,
+                image: './media//kit_fox.png',
+                score: 69
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 7,
-        fields: {
+        category: {
+            id: 7,
             label: 'bee eater',
             label_ja: 'スイートピー',
             ecology:
@@ -123,12 +243,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 80,
             magic_defense: 60,
             speed: 115
-        }
+        },
+        individuals: [
+            {
+                id: 20,
+                category: 7,
+                image: './media//bee_eater.png',
+                score: 98
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 8,
-        fields: {
+        category: {
+            id: 8,
             label: 'Samoyed',
             label_ja: 'サモエド',
             ecology:
@@ -141,12 +268,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 75,
             magic_defense: 65,
             speed: 50
-        }
+        },
+        individuals: [
+            {
+                id: 21,
+                category: 8,
+                image: './media//Samoyed.png',
+                score: 57
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 9,
-        fields: {
+        category: {
+            id: 9,
             label: 'ox',
             label_ja: 'ウシ',
             ecology:
@@ -159,12 +293,31 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 40,
             magic_defense: 50,
             speed: 55
-        }
+        },
+        individuals: [
+            {
+                id: 22,
+                category: 9,
+                image: './media//ox_729zVav.png',
+                score: 99
+            },
+            {
+                id: 23,
+                category: 9,
+                image: './media//ox.png',
+                score: 83
+            },
+            {
+                id: 24,
+                category: 9,
+                image: './media//ox_aj47IrQ.png',
+                score: 69
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 10,
-        fields: {
+        category: {
+            id: 10,
             label: 'giant panda',
             label_ja: 'ジャイアントパンダ',
             ecology:
@@ -177,12 +330,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 50,
             magic_defense: 80,
             speed: 40
-        }
+        },
+        individuals: [
+            {
+                id: 25,
+                category: 10,
+                image: './media//giant_panda.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 11,
-        fields: {
+        category: {
+            id: 11,
             label: 'albatross',
             label_ja: 'アルバトロス',
             ecology:
@@ -195,12 +355,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 75,
             magic_defense: 83,
             speed: 80
-        }
+        },
+        individuals: [
+            {
+                id: 26,
+                category: 11,
+                image: './media//albatross.png',
+                score: 50
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 12,
-        fields: {
+        category: {
+            id: 12,
             label: 'chickadee',
             label_ja: 'ハシブトガラス',
             ecology:
@@ -213,12 +380,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 40,
             magic_defense: 50,
             speed: 65
-        }
+        },
+        individuals: [
+            {
+                id: 27,
+                category: 12,
+                image: './media//chickadee.png',
+                score: 35
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 13,
-        fields: {
+        category: {
+            id: 13,
             label: 'tiger',
             label_ja: 'トラ',
             ecology:
@@ -231,12 +405,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 50,
             magic_defense: 60,
             speed: 100
-        }
+        },
+        individuals: [
+            {
+                id: 28,
+                category: 13,
+                image: './media//tiger.png',
+                score: 92
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 14,
-        fields: {
+        category: {
+            id: 14,
             label: 'wallaby',
             label_ja: 'ワラビー',
             ecology:
@@ -249,12 +430,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 40,
             magic_defense: 60,
             speed: 95
-        }
+        },
+        individuals: [
+            {
+                id: 29,
+                category: 14,
+                image: './media//wallaby.png',
+                score: 81
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 15,
-        fields: {
+        category: {
+            id: 15,
             label: 'ice bear',
             label_ja: 'シロクマ',
             ecology:
@@ -267,12 +455,25 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 60,
             magic_defense: 70,
             speed: 70
-        }
+        },
+        individuals: [
+            {
+                id: 30,
+                category: 15,
+                image: './media//ice_bear.png',
+                score: 99
+            },
+            {
+                id: 31,
+                category: 15,
+                image: './media//ice_bear_Wfbcewc.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 16,
-        fields: {
+        category: {
+            id: 16,
             label: 'zebra',
             label_ja: 'シマウマ',
             ecology:
@@ -285,12 +486,37 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 40,
             magic_defense: 70,
             speed: 115
-        }
+        },
+        individuals: [
+            {
+                id: 32,
+                category: 16,
+                image: './media//zebra.png',
+                score: 99
+            },
+            {
+                id: 33,
+                category: 16,
+                image: './media//zebra_Kxk5xxG.png',
+                score: 99
+            },
+            {
+                id: 34,
+                category: 16,
+                image: './media//zebra_tsUj3U9.png',
+                score: 99
+            },
+            {
+                id: 35,
+                category: 16,
+                image: './media//zebra_P9XKW3J.png',
+                score: 99
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 17,
-        fields: {
+        category: {
+            id: 17,
             label: 'beaver',
             label_ja: 'ビーバー',
             ecology:
@@ -303,12 +529,19 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 35,
             magic_defense: 75,
             speed: 30
-        }
+        },
+        individuals: [
+            {
+                id: 36,
+                category: 17,
+                image: './media//beaver.png',
+                score: 57
+            }
+        ]
     },
     {
-        model: 'api.category',
-        pk: 18,
-        fields: {
+        category: {
+            id: 18,
             label: 'otter',
             label_ja: 'カワウソ',
             ecology:
@@ -321,339 +554,14 @@ export const CATEGORY_DETAIL_RESPONSE = [
             magic_attack: 45,
             magic_defense: 55,
             speed: 70
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 1,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear_gmaJ8OK.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 2,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear_sy7JS9A.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 3,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear_TOYsFZl.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 4,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear_WClqAmu.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 5,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear_wlrzLvN.png',
-            score: 90
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 6,
-        fields: {
-            category: 1,
-            image: 'tests/animals/brown_bear.png',
-            score: 98
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 7,
-        fields: {
-            category: 2,
-            image: 'tests/animals/Arabian_camel.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 8,
-        fields: {
-            category: 2,
-            image: 'tests/animals/Arabian_camel_p4apRBh.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 9,
-        fields: {
-            category: 2,
-            image: 'tests/animals/Arabian_camel_rwp9CoI.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 10,
-        fields: {
-            category: 2,
-            image: 'tests/animals/Arabian_camel_6gZ0d8u.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 11,
-        fields: {
-            category: 2,
-            image: 'tests/animals/Arabian_camel_mecjipq.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 12,
-        fields: {
-            category: 3,
-            image: 'tests/animals/ostrich.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 13,
-        fields: {
-            category: 4,
-            image: 'tests/animals/dingo.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 14,
-        fields: {
-            category: 4,
-            image: 'tests/animals/dingo_EInmKim.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 15,
-        fields: {
-            category: 5,
-            image: 'tests/animals/African_elephant_3qaRWu8.png',
-            score: 75
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 16,
-        fields: {
-            category: 5,
-            image: 'tests/animals/African_elephant.png',
-            score: 55
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 17,
-        fields: {
-            category: 5,
-            image: 'tests/animals/African_elephant_d9z0cld.png',
-            score: 52
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 18,
-        fields: {
-            category: 5,
-            image: 'tests/animals/African_elephant_vtUu5gL.png',
-            score: 45
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 19,
-        fields: {
-            category: 6,
-            image: 'tests/animals/kit_fox.png',
-            score: 69
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 20,
-        fields: {
-            category: 7,
-            image: 'tests/animals/bee_eater.png',
-            score: 98
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 21,
-        fields: {
-            category: 8,
-            image: 'tests/animals/Samoyed.png',
-            score: 57
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 22,
-        fields: {
-            category: 9,
-            image: 'tests/animals/ox_729zVav.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 23,
-        fields: {
-            category: 9,
-            image: 'tests/animals/ox.png',
-            score: 83
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 24,
-        fields: {
-            category: 9,
-            image: 'tests/animals/ox_aj47IrQ.png',
-            score: 69
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 25,
-        fields: {
-            category: 10,
-            image: 'tests/animals/giant_panda.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 26,
-        fields: {
-            category: 11,
-            image: 'tests/animals/albatross.png',
-            score: 50
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 27,
-        fields: {
-            category: 12,
-            image: 'tests/animals/chickadee.png',
-            score: 35
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 28,
-        fields: {
-            category: 13,
-            image: 'tests/animals/tiger.png',
-            score: 92
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 29,
-        fields: {
-            category: 14,
-            image: 'tests/animals/wallaby.png',
-            score: 81
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 30,
-        fields: {
-            category: 15,
-            image: 'tests/animals/ice_bear.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 31,
-        fields: {
-            category: 15,
-            image: 'tests/animals/ice_bear_Wfbcewc.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 32,
-        fields: {
-            category: 16,
-            image: 'tests/animals/zebra.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 33,
-        fields: {
-            category: 16,
-            image: 'tests/animals/zebra_Kxk5xxG.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 34,
-        fields: {
-            category: 16,
-            image: 'tests/animals/zebra_tsUj3U9.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 35,
-        fields: {
-            category: 16,
-            image: 'tests/animals/zebra_P9XKW3J.png',
-            score: 99
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 36,
-        fields: {
-            category: 17,
-            image: 'tests/animals/beaver.png',
-            score: 57
-        }
-    },
-    {
-        model: 'api.individual',
-        pk: 37,
-        fields: {
-            category: 18,
-            image: 'tests/animals/otter.png',
-            score: 96
-        }
+        },
+        individuals: [
+            {
+                id: 37,
+                category: 18,
+                image: './media//otter.png',
+                score: 96
+            }
+        ]
     }
 ]

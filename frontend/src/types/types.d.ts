@@ -10,23 +10,21 @@ export type Individual = {
     image: string
     score: number
     category: number
-    label: string
-    label_ja: string
 }
 
 export type CategoryDetail = {
     id: number
     label: string
     label_ja: string
+    ecology: string
+    trivia: string
+    type: string
     hp: number
     attack: number
     defense: number
-    speed: number
     magic_attack: number
     magic_defense: number
-    type: string
-    trivia: string
-    ecology: string
+    speed: number
 }
 
 export type Status = {
@@ -40,7 +38,7 @@ export type Status = {
 
 export type Trivia = {
     label: string
-    label_ja:string
+    label_ja: string
     trivia: string
 }
 

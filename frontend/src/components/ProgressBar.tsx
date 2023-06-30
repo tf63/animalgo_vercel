@@ -16,11 +16,9 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ width, value }) => {
     }, [progress])
 
     return (
-        // <div className="card">
         <div className="progress-bar" style={{ width: `${width}px` }}>
             <div className="progress-bar__fill" style={{ width: `${progress}%` }} />
         </div>
-        // </div>
     )
 }
 

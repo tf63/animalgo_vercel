@@ -10,7 +10,7 @@ import ImageSlider from './ImageSlider'
 import { Category, Individual } from '../types/types'
 import { CategoryAPI, GridProps } from '../interfaces/interfaces'
 
-import { CATEGORY_RESPONSE } from '../data/category'
+import { CATEGORY_RESPONSE } from '../data/Category'
 
 const GridComponent: React.FC<GridProps> = ({ categories }) => {
     return (
@@ -20,7 +20,7 @@ const GridComponent: React.FC<GridProps> = ({ categories }) => {
                 {categories.map((category, index) => (
                     <Link to={`/detail/${category.id}`} className="card square link" key={index}>
                         <div className="container-center">
-                            <img src={`${category.image}`} style={{ width: '180px' }} alt={category.label_ja} />
+                            <img src={category.image} style={{ width: '180px' }} alt={category.label_ja} />
                         </div>
                         <div className="container-center">
                             <p>{category.label_ja}</p>
@@ -37,7 +37,7 @@ const Home = () => {
     const [recentIndividuals, setRecentIndividuals] = useState<Individual[]>([])
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = () => {
             // const response = await axios(API_ENDPOINTS.CATEGORY)
             // const data: CategoryAPI = await response.data
             const data: CategoryAPI = CATEGORY_RESPONSE

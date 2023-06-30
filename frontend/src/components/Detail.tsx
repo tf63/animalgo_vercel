@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { CategoryDetail, Individual, Status } from '../types/types'
 import { CategoryDetailAPI } from '../interfaces/interfaces'
-import { API_ENDPOINTS } from '../api'
 import ProgressBar from './ProgressBar'
 import { CATEGORY_DETAIL_RESPONSE } from '../data/CategoryDetail'
 
@@ -72,7 +71,7 @@ const Detail = () => {
             </div>
             <div className="card column2">
                 <div className="detail_img">
-                    <img src={individuals[0].image}></img>
+                    <img src={individuals[0].image} width="250px"></img>
                 </div>
                 <div className="detail_info1">
                     <p>No.{categoryDetail.id}</p>
@@ -113,20 +112,22 @@ const Detail = () => {
             </div>
             <div>
                 <div className="container-center">
-                    {individuals.map((individual, index) => (
-                        <div className="card square" key={index}>
-                            <div className="container-center">
-                                <img
-                                    src={individual.image}
-                                    style={{ width: '180px' }}
-                                    alt={individual.score.toString()}
-                                />
+                    <div className="grid-box">
+                        {individuals.map((individual, index) => (
+                            <div className="card square" key={index}>
+                                <div className="container-center">
+                                    <img
+                                        src={individual.image}
+                                        style={{ width: '180px' }}
+                                        alt={individual.score.toString()}
+                                    />
+                                </div>
+                                <div className="container-center">
+                                    <p>Lv. {individual.score.toString()}</p>
+                                </div>
                             </div>
-                            <div className="container-center">
-                                <p>Lv. {individual.score.toString()}</p>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
 

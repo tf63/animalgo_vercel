@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate, useLocation } from 'react-router-dom'
-import { API_ENDPOINTS } from '../api'
+import { Link, useNavigate } from 'react-router-dom'
 import { ImageAPI, TriviaAPI } from '../interfaces/interfaces'
 import { Trivia } from '../types/types'
-import axios from 'axios'
 import TriviaSlider from './TriviaSlider'
 import { TRIVIA_RESPONSE } from '../data/Trivia'
 
 const Loading = () => {
     const navigate = useNavigate()
-    const location = useLocation()
-    const file = location.state?.file
     const [dots, setDots] = useState(0)
 
     const [responseStatus, setResponseStatus] = useState(true)
@@ -28,6 +24,7 @@ const Loading = () => {
                 setTriviaList(data.trivia)
             } catch (error) {
                 console.error('Failed to fetch trivia:', error)
+                setResponseStatus(false)
             }
         }
 
@@ -43,35 +40,38 @@ const Loading = () => {
     }, [])
 
     useEffect(() => {
-        const processData = async () => {
-            if (file) {
-                try {
-                    const formData = new FormData()
-                    formData.append('image', file)
-
-                    const response = await axios.post(API_ENDPOINTS.IMAGE, formData, {
-                        headers: {
-                            'Content-Type': 'multipart/form-data'
-                        }
-                    })
-
-                    const data: ImageAPI = response.data
-
-                    console.log('Response is ...')
-                    console.log(data)
-
-                    navigate('/result', { state: { data } }) // 結果ページへの遷移
-                } catch (error) {
-                    // エラーハンドリング
-                    // alert('エラー')
-                    setResponseStatus(false)
-                    // navigate('/') // 結果ページへの遷移
+        const timer = setTimeout(() => {
+            const data: ImageAPI = {
+                category: {
+                    id: 20,
+                    label: 'tabby',
+                    label_ja: 'タビー猫',
+                    hp: 50,
+                    attack: 50,
+                    defense: 50,
+                    speed: 90,
+                    magic_attack: 50,
+                    magic_defense: 50,
+                    type: 'ノーマル',
+                    trivia: 'タビー猫の柄の種類は多岐にわたり、独特の模様を持っています。また、猫は寝転がっているところが好きで、目の前にあるものに関係なく、その場で寝てしまうことがあります。',
+                    ecology: 'タビー猫は主に人間の家で飼われています。小型哺乳類や鳥類を食べ、夜行性です。'
+                },
+                individual: {
+                    id: 45,
+                    image: '/images/devtanuki.png',
+                    score: 44,
+                    category: 20,
+                    label: 'tabby',
+                    label_ja: 'タビー猫'
                 }
             }
-        }
+            navigate('/result', { state: { data } })
+        }, 15000)
 
-        processData()
-    }, [file, navigate])
+        return () => {
+            clearTimeout(timer) // コンポーネントがアンマウントされたらタイマーをクリアします
+        }
+    }, [navigate])
 
     useEffect(() => {
         console.log(triviaList)

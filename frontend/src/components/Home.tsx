@@ -1,12 +1,7 @@
-import axios from 'axios'
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
-import { API_ENDPOINTS } from '../api'
-import ImageUploadForm from './ImageInput'
 import ImageSlider from './ImageSlider'
-
 import { Category, Individual } from '../types/types'
 import { CategoryAPI, GridProps } from '../interfaces/interfaces'
 
@@ -58,7 +53,9 @@ const Home = () => {
             <div className="container-center explain-container">
                 <h3 className="padding-top">みんなでつくる，あにモン図鑑</h3>
             </div>
-            <ImageUploadForm />
+            <Link to={'/loading'} className="link">
+                <div className="card-green">ダミーを送信</div>
+            </Link>
             <div className="toppage_midashi">
                 <p>最近の投稿</p>
                 <div className="line"> </div>
